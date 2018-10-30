@@ -1,11 +1,12 @@
 # h1b_statistics
 
-The GitHub repositoty contains may solution to the coding challenge for the Fellow Program organized by Insight Data Science.
+The GitHub repositoty contains solution to the coding challenge for the Fellow Program organized by Insight Data Science.
 
 Given a comma seperated input file with 10 output file is shown below
 
+This Github repository has solution to the coding challenge for the Fellow Program organized by Insight Data Science regarding H1B Statistics in the United States of America.
 
-
+When the program is run with an input csv file contraining thousands of data, it produces an output with two files.
 The script generates two output files "top_10_occupations.txt" and " top_10_states.txt" for the input csv file "h1b_input.csv".
 
 
@@ -17,7 +18,7 @@ As the data about immigration in US us out by Office of Foreigh Labor Certificat
 
 To execute the script move to the main directory of the project and run the following in the terminal:
 
-``` type this ```
+```python3 ./src/compare_files.py ./output/sample_output.txt ./output/top_cost_drug.txt```
 Last two arguments should be input and output files, respectively.
 Alternatively, If you have python in your machine, you can download h1b.py file and run in python.
 
