@@ -8,3 +8,8 @@ Given a comma seperated input file with 10 output file is shown below
 
 The script generates two output files "top_10_occupations.txt" and " top_10_states.txt" for the input csv file "h1b_input.csv".
 
+
+# Python Code for H1B Immigration Trend in USA
+
+As the data about immigration in US us out by Office of Foreigh Labor Certification Performance Data, there is a summary publised by the labour department for the year 2018 and 2017. But there is no data publised for past years. Hence the programm attached with this repository can create a desired output for TOP 10 STATES for approved H1B and TOP 10 OCCUPATION in the usa for H1B status. Each time when the input changes the python program can pull the data and present viewers the required result.
+
