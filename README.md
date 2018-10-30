@@ -19,6 +19,7 @@ As the data about immigration in US us out by Office of Foreigh Labor Certificat
 To execute the script move to the main directory of the project and run the following in the terminal:
 
 ```python3 ./src/compare_files.py ./output/sample_output.txt ./output/top_cost_drug.txt```
+
 Last two arguments should be input and output files, respectively.
 Alternatively, If you have python in your machine, you can download h1b.py file and run in python.
 
