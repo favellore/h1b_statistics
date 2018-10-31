@@ -9,7 +9,7 @@
 
 # Import csv file
 
-file=('input/h1b_input.csv',encoding = 'UTF-8')
+file = 'input/h1b_input.csv'
 
 occupation=[]
 
