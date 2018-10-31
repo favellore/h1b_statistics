@@ -9,13 +9,13 @@
 
 # Import csv file
 
-file="input/h1b_input.csv"
+file='input/h1b_input.csv'
 
 occupation=[]
 
 for line in open(file):
 
-# We need to split the csv file to read accordingly, the split is done with ";"
+# We need to split the csv file to read accordingly, the split is done with ';'
 
     val=line.split(';')
     
@@ -27,7 +27,7 @@ for line in open(file):
 # The problem statement ask for top 10 CERTIFIED H1B State and Top 10 Occupations CERTIFIED
 # Hence the variable CERTIFIED is selected which is in column 2.
 
-        if(val[2]=="CERTIFIED"):
+        if(val[2]=='CERTIFIED'):
         
 # Column 22 has the Occupations specified, hence CERTIFIED & OCCUPATION is filtered accordingly.
 
@@ -51,15 +51,15 @@ dat=dict(zip(x,y))
 sorted_dat = sorted(dat.items(), key=lambda kv: kv[1])
 sorted_dat.reverse() # to get rank ordering 
 
-# Below code will open a text file, by name "top_10_occupations.txt" with a writing parameter so that we can
+# Below code will open a text file, by name 'top_10_occupations.txt' with a writing parameter so that we can
 # add the result to this file as output accordingly.
 
-occupation=open("output/top_10_occupations.txt","w")  
+occupation=open('output/top_10_occupations.txt','w')  
 
 # The header for TOP OCCUPATION has TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE, which is stored in the file occupation
 # Intrun saves in the text file.
 
-print("TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE",file=occupation)
+print('TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=occupation)
 
 # The below code will have top ten certified application
 # we need top 10 with one decimal percentage.
@@ -69,7 +69,7 @@ for x in range(1,11,1):
     m=sorted_dat[x][1]
     print(n,m,'{:.1%}'.format(m/num),sep=';',file=occupation)
     
-# The code below closes the text file by writing the above output in the text file "top_10_state.txt" accordingly
+# The code below closes the text file by writing the above output in the text file 'top_10_state.txt' accordingly
 
 occupation.close()
 
@@ -78,7 +78,7 @@ occupation.close()
 state=[]
 for line in open(file):
     
-# We need to split the csv file to read accordingly, the split is done with ";"
+# We need to split the csv file to read accordingly, the split is done with ';'
     
     val=line.split(';')
     
@@ -90,7 +90,7 @@ for line in open(file):
 # The problem statement ask for top 10 CERTIFIED H1B State and Top 10 Occupations CERTIFIED
 # Hence the variable CERTIFIED is selected which is in column 2.
 
-        if(val[2]=="CERTIFIED"):
+        if(val[2]=='CERTIFIED'):
         
 # Column 11 has the Occupations specified, hence CERTIFIED & OCCUPATION is filtered accordingly.
 
@@ -114,15 +114,15 @@ dats=dict(zip(a,b))
 sorted_dats = sorted(dats.items(), key=lambda kvs: kvs[1])
 sorted_dats.reverse() # to get rank ordering 
 
-# Below code will open a text file, by name "top_10_state.txt" with a writing parameter so that we can
+# Below code will open a text file, by name 'top_10_state.txt' with a writing parameter so that we can
 # add the result to this file as output accordingly.
 
-state=open("output/top_10_states.txt","w")    
+state=open('output/top_10_states.txt','w')    
 
 # The header for TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE, which is stored in the file occupation
 # Intrun saves in the text file.
 
-print("TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE",file=state)
+print('TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=state)
 
 # The below code will have top ten certified application
 # we need top 10 with one decimal percentage.
@@ -132,7 +132,7 @@ for a in range(1,11,1):
     p=sorted_dats[a][1]
     print(o,p,'{:.1%}'.format(p/num),sep=';',file=state)
     
-# The code below closes the text file by writing the above output in the text file "top_10_state.txt" accordingly
+# The code below closes the text file by writing the above output in the text file 'top_10_state.txt' accordingly
     
 state.close()
 
