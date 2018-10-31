@@ -25,3 +25,8 @@ Alternatively, If you have python in your machine, you can download h1b.py file 
 
 Also, you can execute ```./run.sh``` script to run the codes for file and perform test.
 
+## Python
+
+The code in the folder src is best run in Python. It sucessfully created two files which as the required output.
+You can clone this repository / download the code for desired output.
+
