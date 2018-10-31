@@ -54,7 +54,7 @@ sorted_dat.reverse() # to get rank ordering
 # Below code will open a text file, by name 'top_10_occupations.txt' with a writing parameter so that we can
 # add the result to this file as output accordingly.
 
-occupation=open('./output/top_10_occupations.txt','w', encoding = 'UTF-8')  
+occupation=open('top_10_occupations.txt','w', encoding = 'UTF-8')  
 
 # The header for TOP OCCUPATION has TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE, which is stored in the file occupation
 # Intrun saves in the text file.
@@ -117,7 +117,7 @@ sorted_dats.reverse() # to get rank ordering
 # Below code will open a text file, by name 'top_10_state.txt' with a writing parameter so that we can
 # add the result to this file as output accordingly.
 
-state=open('./output/top_10_states.txt','w',encoding = 'UTF-8')    
+state=open('top_10_states.txt','w',encoding = 'UTF-8')    
 
 # The header for TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE, which is stored in the file occupation
 # Intrun saves in the text file.
