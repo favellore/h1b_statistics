@@ -59,7 +59,7 @@ occupation=open('output/top_10_occupations.txt','w')
 # The header for TOP OCCUPATION has TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE, which is stored in the file occupation
 # Intrun saves in the text file.
 
-print('TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=occupation)
+#print('TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=occupation)
 
 # The below code will have top ten certified application
 # we need top 10 with one decimal percentage.
@@ -67,7 +67,7 @@ print('TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=occupation
 for x in range(1,11,1):
     n=sorted_dat[x][0]
     m=sorted_dat[x][1]
-    print(n,m,'{:.1%}'.format(m/num),sep=';',file=occupation)
+    print(n,m,'{:.1%}'.format(m/num),sep=';'+'output/top_10_occupations.txt')
     
 # The code below closes the text file by writing the above output in the text file 'top_10_state.txt' accordingly
 
@@ -122,7 +122,7 @@ state=open('output/top_10_states.txt','w')
 # The header for TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE, which is stored in the file occupation
 # Intrun saves in the text file.
 
-print('TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=state)
+#print('TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=state)
 
 # The below code will have top ten certified application
 # we need top 10 with one decimal percentage.
@@ -130,7 +130,7 @@ print('TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=state)
 for a in range(1,11,1):
     o=sorted_dats[a][0]
     p=sorted_dats[a][1]
-    print(o,p,'{:.1%}'.format(p/num),sep=';',file=state)
+    print(o,p,'{:.1%}'.format(p/num),sep=';'+'output/top_10_states.txt')
     
 # The code below closes the text file by writing the above output in the text file 'top_10_state.txt' accordingly
     
