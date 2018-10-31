@@ -59,7 +59,7 @@ occupation=open('output/top_10_occupations.txt','w', encoding = 'UTF-8')
 # The header for TOP OCCUPATION has TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE, which is stored in the file occupation
 # Intrun saves in the text file.
 
-print('TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE',file=occupation)
+print('TOP_OCCUPATIONS;NUMBERCERTIFIEDAPPLICATIONS;PERCENTAGE',file=occupation)
 
 # The below code will have top ten certified application
 # we need top 10 with one decimal percentage.
