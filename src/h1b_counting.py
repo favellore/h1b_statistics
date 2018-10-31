@@ -4,7 +4,7 @@
 # In[5]:
 
 
-#!/usr/bin/env python3
+
 # program that constructs a text file from H1B database for Top 10 State and Top 10 Occupation certified for H1B
 
 # Import csv file
