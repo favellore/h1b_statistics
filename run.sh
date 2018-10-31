@@ -1,2 +1,2 @@
 # Test for getting output.
-python3 ./src/compare_files.py ./output/sample_output.txt ./output/top_cost_drug.txt
+python ./src/h1b_counting.py ./input/h1b_input.csv ./output/top_10_occupations.txt ./output/top_10_states.txt
